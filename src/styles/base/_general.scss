@@ -1,0 +1,103 @@
+.body {
+    background-color: #fff;
+    min-width: 320px;
+    color: $mainColor;
+    font-family: 'Avenir Next Cyr';
+}
+
+* {
+    box-sizing: border-box;
+}
+
+button,
+a {
+    cursor: pointer;
+}
+
+button,
+a,
+input,
+textarea {
+    outline-color: transparent;
+}
+
+.container {
+    max-width: 1920px;
+    width: 100%;
+    margin: auto;
+
+    &--prm {
+        position: relative;
+        &:before {
+            content: '';
+            display: block;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1;
+            background-image: url(../img/main/colorful-abstract.jpg);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-blend-mode: luminosity;
+            background-color: #ffffff;
+        }
+
+        &:after {
+            content: '';
+            background-color: rgba(255, 255, 255, 0.95);
+            position: absolute;
+            z-index: 2;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+        }
+    }
+}
+
+.content {
+    max-width: 980px;
+    width: 100%;
+    margin: auto;
+
+    
+}
+
+.title {
+    font-size: 44px;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.subtitle {
+    color: #000000;
+    font-size: 24px;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+    width: 100%;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: none;
+    border-radius: 32px;
+    padding: 19.5px 63px;
+
+    &__text {
+        font-size: 22px;
+        font-weight: 600;
+        color: #ffffff;
+    }
+
+    &--add {
+        box-shadow: 0 4px 15px #99b8cd;
+        background-image: linear-gradient(-22.44deg, #5c8dff 0%, #2ae335 100%);
+    }
+}
